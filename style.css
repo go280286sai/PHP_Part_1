@@ -7,3 +7,10 @@ a {
 a:hover {
   color: red;
 }
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+table {
+  margin-top: 5px;
+}
