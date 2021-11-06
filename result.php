@@ -14,10 +14,20 @@
     include "header.php";
     ?>
     <main>
-        <form action="result.php"  method="POST" target="_self">
-            <input type="text" name="stroka" >
-            <input type="submit" value="Отправить" >
-        </form>   </main>
+       <?php
+       $st = $_POST['stroka'];
+       $st=(string)($st);
+       $total="";
+       
+       for($i=strlen($st)-1; $i>=0; $i--){
+  
+        $total.=$st[$i];
+          
+       }
+       echo $total;
+
+       ?> 
+</main>
     <?php
     include "footer.php";
     ?>
